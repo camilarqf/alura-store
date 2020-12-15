@@ -1,0 +1,26 @@
+.app {
+    background: #f1f1f1;
+    display: grid; /* elemento pai precisa see comportar como grid */
+    grid-template-areas:  /* dividir o template em areas */
+        "cabecalho"
+        "conteudo"
+        "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+   /*  background: #00cc99; */
+    grid-area: cabecalho;
+}
+
+.conteudo {
+    /* background: #ff8080; */
+    grid-area: conteudo;
+}
+
+.rodape {
+   /*  background: #0099ff; */
+    grid-area: rodape;
+}
